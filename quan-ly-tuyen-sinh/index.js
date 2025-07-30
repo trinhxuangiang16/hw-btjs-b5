@@ -1,3 +1,11 @@
+//Mô hình 3 khối
+
+/*
+- input: Điểm 3 môn, điểm chuẩn, điểm ưu tiên
+- Cách tính: có môn = 0 hoặc tổng điểm < điểm chuẩn => thi rớt, Tổng điểm = Tổng điểm 3 môn + điểm khu vực + điểm đối tương 
+- Kết quả tổng điểm và kết quả thi đậu hay rớt
+*/
+
 let traKetQua = function () {
   document.getElementById("ketQua").innerText = "Kết quả thi của bạn là";
 
