@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="maKhachHang"></label>
+    <input type="text" id="maKhachHang" />
+    <div>
+      <label>
+        <input
+          type="radio"
+          name="doiTuong"
+          value="doanh-nghiep"
+          onchange="handleChon()"
+        />
+        Doanh Nghiệp
+      </label>
+      <br />
+      <label>
+        <input
+          type="radio"
+          name="doiTuong"
+          value="nha-dan"
+          onchange="handleChon()"
+        />
+        Nhà Dân
+      </label>
+    </div>
+
+    <div style="display: none" id="wrap-soKetNoi">
+      <label for="soKetNoi">Số kết nối</label>
+      <input type="number" id="soKetNoi" />
+    </div>
+    <br />
+    <label for="kenhCaoCap">Số kênh cao cấp</label>
+    <input type="number" id="kenhCaoCap" />
+    <br />
+    <button onclick="tinhGiaCap()">Tính Giá Cáp</button>
+    <h2 id="ketQua">Tiền cáp phải trả của bạn là</h2>
+    <script src="./index.js"></script>
+  </body>
+</html>
